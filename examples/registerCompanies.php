@@ -3,9 +3,9 @@
 
   if(!isset($_SESSION)) session_start();
 
-//   if(!isset($_SESSION['usr_id'])) header('Location: index.php');
+  if(!isset($_SESSION['usr_id'])) header('Location: index.php');
 
-//   if($_SESSION['sts_cli'] != '1') header('Location: index.php');
+  if($_SESSION['sts_cli'] != '1') header('Location: index.php');
 
   if(isset($_POST['submit'])){
 		$nomeComp = $_POST['nameComp'];
