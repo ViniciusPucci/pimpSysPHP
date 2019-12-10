@@ -3,9 +3,6 @@
 
   if(!isset($_SESSION)) session_start();
 
-  echo "INSERT INTO heroku_771ebb9276e8c52.tbastuser_roles (`_idUserRole`, `_idUser`) VALUES (1,1)";
-
-
   // if(!isset($_SESSION['usr_id'])) header('Location: index.php');
   $sqlCompany = "SELECT _idCompany, companyname FROM tbcompanies";
   $resultCompany = mysqli_query($con, $sqlCompany) or die("Falha ao encontrar companias");
